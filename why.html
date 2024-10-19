@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operations and Image Slideshow with Animations</title>
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+
+    <h2>Perform Arithmetic Operations</h2>
+    <input type="number" id="num1" placeholder="Enter first number" required>
+    <input type="number" id="num2" placeholder="Enter second number" required>
+    <br>
+
+    <button onclick="handleButtonClick(event,'add')">Add</button>
+    <button onclick="handleButtonClick(event,'subtract')">Subtract</button>
+    <button onclick="handleButtonClick(event,'multiply')">Multiply</button>
+    <button onclick="handleButtonClick(event,'divide')">Divide</button>
+
+    <div class="result" id="result"></div>
+    <h2>These are some night sky photos.Enjoy</h2>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="nightsky.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="nightsky2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="nightsky3.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="nightsky4.jpg" alt="Image 4">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+  <script src="slideshow.js"></script>
+</body>
+</html>

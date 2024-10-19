@@ -1,0 +1,13 @@
+body{
+    height: 100%;
+    background: linear-gradient(0deg,rgb(63, 69, 230) 0%,rgb(92, 134, 224) 50%,rgb(141, 200, 243) 100%);
+   position: relative;
+   min-height: 100vh;
+}
+h1{
+    text-wrap-style:pretty;
+    color: rgb(255, 52, 160);
+}
+p{
+    color: rgb(0, 0, 0);
+}
